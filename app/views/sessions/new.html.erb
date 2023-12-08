@@ -1,0 +1,13 @@
+<div class="container">
+
+  <%= form_with(scope: :session, url: session_path, data: {turbo: false}) do |form| %>
+    <p class="mt"> <%= form.label :email %></p>
+    <%= form.text_field :email, placeholder: "example@askme.com"%>
+
+    <p class="mt"><%= form.label :password %></p>
+    <%= form.password_field :password %>
+
+    <p class="mt"> <%= form.submit "Log In!" %></p>
+  <% end %>
+
+</div>

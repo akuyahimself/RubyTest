@@ -1,0 +1,76 @@
+body{
+    color: #03071E;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+a, .button_del {
+    color: #DC2F02
+
+}
+
+.a-text{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+
+.icon-a-text p {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed for spacing between buttons */
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 40px;
+}
+
+.button_del {
+    font-weight: bold;
+
+    margin-bottom: 7px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.button_home{
+
+}
+
+.title-lg {
+    font-size: 175%;
+}
+.title{
+    font-size: 150%;
+}
+
+.title-sm {
+    font-size: 125%;
+}
+
+.text-sm {
+    font-size: 80%;
+}
+.username{
+    color:  #d8be00;
+    font-family: 'Arvo', sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.navbar a{
+    color:  #3EB489;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.button_to{
+    display: inline-block;
+}
+
+.text-red{
+    color: #B00100;
+}

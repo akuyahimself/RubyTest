@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Askme</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+   <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= favicon_link_tag 'favicon-16x16.png' %>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700">
+
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+
+  <div class = "wrapper">
+    <div class="navbar">
+
+      <p class="text-sm text-bold"><%= link_to "ASKME", root_path%></p>
+
+      <div class="">
+        <%if current_user.present? %>
+        <p class="username"> <%= "@#{current_user.nickname}" %></p>
+          <%= button_to 'Logout', session_path, method: :delete %>
+        <%else %>
+        <%= link_to "Register", new_user_path, class: ""%>
+          |
+          <%= link_to "Login", new_session_path, class: ""%>
+
+      <% end %>
+      </div>
+
+    </div>
+    <% if flash[:notice].present? %>
+      <p class="mb mt message message-notice"><%= flash[:notice] %> </p>
+    <% end %>
+
+    <% if flash[:alert].present? %>
+      <p class="mb mt message message-alert"><%= flash[:alert] %> </p>
+    <% end %>
+
+    <%= yield %>
+
+
+  </div>
+  </body>
+</html>

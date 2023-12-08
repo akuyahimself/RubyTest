@@ -1,0 +1,36 @@
+
+
+body{
+    /*
+    background-color:  #03071E;
+    */
+    background: linear-gradient(90deg, #0a2a50 0%, #072549 100%);
+
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 40px;
+    width: 100%;
+}
+
+.container{
+    background-color:   #eef5c5 ;
+    padding: 20px;
+}
+
+.navbar{
+    /*
+    background-color: #b26ce5;
+    */
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    height: 25px;
+    background: radial-gradient(circle at right,  #48027b  ,  #a63af5 );
+    align-items: center;
+    padding: 15px;
+}

@@ -1,0 +1,22 @@
+<div class="container">
+
+
+
+  <s class="a-text"><%= link_to "Create new question", new_question_path, class: "button button_main"%></s>
+
+  <%= render 'form', question: @question%>
+
+</div>
+<div class="container mt-lg mb-lg">
+<h2 class = "title-lg" >
+
+<%= @questions.count %>
+  <%= inclination(@questions.count, "Question", "Questions", "Questions") %>
+
+</h2>
+</div>
+<% @questions.each do |question| %>
+  <div class="mt-md container">
+    <%= render question %>
+  </div>
+<% end %>
