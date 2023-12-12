@@ -1,12 +1,15 @@
 .message{
     border: 1px solid #45ca71;
     padding: 10px 15px;
-    background-color:  #82c181
-;
+    background: linear-gradient(135deg, #8ff0a4 0%, #26a269 100%);
+    font-family: 'Arvo', sans-serif;
+    font-weight: 600;
 }
 
 
 
 .message-alert {
-    background-color: #B00100;
+    background: linear-gradient(180deg, #f66151 0%, #a51d2d 100%);
+    font-family: 'Arvo', sans-serif;
+    font-weight: 600;
 }

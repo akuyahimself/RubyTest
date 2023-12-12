@@ -11,3 +11,7 @@
     background-color: #9D0208;
 
 }
+
+.btn-danger{
+    background: linear-gradient(180deg, #f66151 0%, #a51d2d 100%);
+}

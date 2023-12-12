@@ -3,8 +3,8 @@ body{
     font-family: "Trebuchet MS", sans-serif;
 }
 
-a, .button_del {
-    color: #DC2F02
+.button_del {
+    color: #db2e03
 
 }
 
@@ -35,9 +35,7 @@ a, .button_del {
     text-decoration: underline;
 }
 
-.button_home{
 
-}
 
 .title-lg {
     font-size: 175%;
@@ -54,18 +52,19 @@ a, .button_del {
     font-size: 80%;
 }
 .username{
-    color:  #d8be00;
+    color:  #000000;
     font-family: 'Arvo', sans-serif;
     font-weight: 900;
     font-size: 19px;
+    text-align: center;
 }
 
-.navbar a{
-    color:  #3EB489;
+.navbar-main a{
+    color:  #000000;
     font-weight: 900;
-    font-size: 20px;
-
+    font-size: 27px;
 }
+
 
 .button_to{
     display: inline-block;
@@ -74,3 +73,7 @@ a, .button_del {
 .text-red{
     color: #B00100;
 }
+
+.username a {
+    font-size: inherit; 
+  }

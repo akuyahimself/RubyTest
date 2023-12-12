@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-main">
 
 
 
@@ -7,16 +7,15 @@
   <%= render 'form', question: @question%>
 
 </div>
-<div class="container mt-lg mb-lg">
+<div class="container-main mt-lg mb-lg">
 <h2 class = "title-lg" >
 
 <%= @questions.count %>
   <%= inclination(@questions.count, "Question", "Questions", "Questions") %>
-
 </h2>
 </div>
 <% @questions.each do |question| %>
-  <div class="mt-md container">
+  <div class="mt-md container-main">
     <%= render question %>
   </div>
 <% end %>
