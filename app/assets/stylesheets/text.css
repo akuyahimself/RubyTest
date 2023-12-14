@@ -50,8 +50,13 @@ body{
 .title-lg {
     font-size: 175%;
 }
+
 .title{
-    font-size: 150%;
+    font-family: 'Arvo', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 15px;
+    font-size: 26px;    
 }
 
 .title-sm {
@@ -77,6 +82,10 @@ body{
 
 }
 
+.text-field{
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
 
 .button_to{
     display: inline-block;
@@ -89,4 +98,8 @@ body{
 .username a {
     font-size: inherit; 
   }
+
+.error-text{
+    margin-left: 5px;
+}
 

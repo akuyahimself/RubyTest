@@ -1,37 +1,45 @@
-<div class="container-main">
 
-  <h2 class="title">Join & Ask!</h2>
-
-  <% if @user.errors.any?  %>
-    <div class="mt">
-      <% @user.errors.full_messages.each do |message| %>
-        <p class="mb text-red"><%= message %></p>
-      <% end %>
+  <div class="container-user" >
+      <h2 class="title mb-md">Join & Ask ^~^</h2>
+      <% if @user.errors.any? %>
+  <div class="mt">
+    <% @user.errors.full_messages.each do |message| %>
+    <div class="align-left mb-sm">
+      <div class="container-error">
+        <p class="mb error-text"><%= message %></p>
+      </div>
     </div>
-  <%end %>
-
-
-
-  <div class="mt" >
-    <%= form_with model: @user, data: {turbo: false} do |form|%>
+    <% end %>
+  </div>
+<% end %>
+    <%= form_with model: @user, data: {turbo: false} do |form| %>
+      <div class="container-field mb-sm text-field">
       <p><%= form.label :name, "Your name" %></p>
       <p><%= form.text_field :name , class: "form-textfield" %></p>
+      </div>
 
+      <div class="container-field mb-sm">
       <p class="mt"><%= form.label :nickname, "Your @nickname" %></p>
       <p><%= form.text_field :nickname , class: "form-textfield" %></p>
+      </div>
 
+      <div class="container-field mb-sm">
       <p class="mt"><%= form.label :email, "Email" %></p>
-      <p><%= form.text_field :email , class: "form-textfield", placeholder: "example@askme.com" %></p>
+      <p><%= form.text_field :email ,
+       class: "form-textfield", placeholder: "example@askme.com" %></p>
+      </div>
 
+      <div class="container-field mb-sm">
       <p class="mt"><%= form.label :password, "Password" %></p>
       <p><%= form.password_field :password , class: "form-textfield"%></p>
+      </div>
 
-      <p class="mt"><%= form.label :password_confirmation, "Password" %></p>
+      <div class="container-field mb-sm">
+       <p class="mt"><%= form.label :password_confirmation, "Password" %></p>
       <p><%= form.password_field :password_confirmation , class: "form-textfield"%></p>
-
-    <p class="mt-lg"><%= form.submit "Register!", class: "button button-main" %></p>
+      </div>
+      <p class="mt-md"><%= form.submit "Register", class: "button-confirm" %></p>
 
     <% end %>
-
   </div>
-</div>
+

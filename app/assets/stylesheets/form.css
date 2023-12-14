@@ -1,12 +1,16 @@
-.form_textarea, .form_textfield {
-    border: 1px solid #d0d0d0;
-    padding: 7px 10px;
+.form-textarea, .form-textfield {
+    border: 3px solid    #bb84c7 ;
+    background-color: rgba( 68, 202, 244, 0.3);
+    border-radius: 5px;
+    
+
 }
 
-.form_textarea:focus, .form_textfield:focus {
+.form-textarea:focus, .form-textfield:focus {
 
-    background-color: #FEF0D7;
+    background-color: rgba( 68, 202, 244, 0.6);
     outline-width: 0;
+    border: none;
 
 }
 

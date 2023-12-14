@@ -67,3 +67,40 @@ body{
     justify-content: center;
     align-items: center;
   }
+
+.container-user {
+    background: linear-gradient(225deg, #99c1f1 0%, #30bd86 100%);
+    padding: 20px;
+    align-items: left;
+    border-radius: 20px;
+}
+
+.container-field {
+    justify-content: left;
+    background-color: rgba( 125, 239, 76 , 0.15);
+    align-items: left;
+    border-radius: 10px;
+    font-family: 'Arvo', sans-serif;
+    font-style: italic;
+    padding: 5px;
+    width:35%;
+    font-size: 17px;  
+}
+
+.container-error{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: inline-block;
+    background: linear-gradient(225deg, #bfabfa 0%, #b698c3 100%);
+    border-radius: 40px;
+    margin: auto;
+    text-align: left;
+    font-family: 'Arvo', sans-serif;
+    font-weight: 600;
+    text-decoration-color: #a51d2d;
+    height: 22px;
+}
+.div-left{
+    justify-content: left;
+    align-items: left;
+}
