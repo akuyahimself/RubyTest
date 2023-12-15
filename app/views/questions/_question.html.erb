@@ -1,18 +1,12 @@
-<div class="mb-sm">
-
+<div class="mb-sm text-md italic">
   <%= question.body%>
-
 </div>
 <div class="text-sm">
-
-
-
-
-  <div class="text-right question_footer">
-    <%= l(question.created_at, format: :short) %>
+  <div class=" question_footer line-footer">
+    <%= l(question.created_at, format: :short, class: "text-right text-dark-grey") %>
+    <div class="container-icons">
     <%= button_to fa_icon('pencil'), edit_question_path(question), method: :get, title: "Redact question", class: "button_del" %>
     <%= button_to fa_icon("trash-o"), question_path(question), method: :delete, title: "Delete question", class: "button_del" %>
-    <%= button_to fa_icon('home'), questions_path, method: :get, title: "Go home page", class: "button_del" %>
   </div>
-
+  </div>
 </div>

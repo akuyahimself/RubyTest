@@ -7,7 +7,58 @@
 
 }
 
-.button_main{
+.button-main{
     background-color: #9D0208;
 
 }
+
+.btn-danger{
+    background: linear-gradient(180deg, #f66151 0%, #a51d2d 100%);
+}
+
+.button-confirm:hover{
+    background: linear-gradient(225deg, #9141ac 0%, #613583 100%)
+
+}
+.button-confirm{
+    background: linear-gradient(225deg, #bfabfa 0%, #b698c3 100%);
+    border-radius: 40px;
+    width: 150px;
+    height: 45px;
+    margin: auto; 
+    justify-content: center;
+    align-items: center;
+    font-size: 27;
+    font-family: 'Arvo', sans-serif;
+    border: none;
+    font-weight: 600;
+}
+.btn-create{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(225deg, #f6832f 0%,  #eb6464  100%);
+    font-size: 27;
+    font-family: 'Arvo', sans-serif;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button_home {
+    color: #db2e03;
+    margin-bottom: 7px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 50px;
+    background: none;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: right;
+    margin-top: -20px; 
+    width: auto;
+    height: auto;
+    border:none;
+}
+
+

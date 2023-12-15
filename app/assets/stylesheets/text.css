@@ -3,8 +3,16 @@ body{
     font-family: "Trebuchet MS", sans-serif;
 }
 
-a, .button_del {
-    color: #DC2F02
+.text-add-question{
+    text-decoration: none;
+    font-family: 'Arvo', sans-serif;
+    font-weight: 850;
+    font-size: 21px;
+    color: #ffffff;
+  }
+
+.button_del {
+    color: #db2e03
 
 }
 
@@ -26,24 +34,29 @@ a, .button_del {
 
 .button_del {
     font-weight: bold;
-
     margin-bottom: 7px;
     font-size: 24px;
     background: none;
-    border: none;
+    border:  #a64cef;
     cursor: pointer;
     text-decoration: underline;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -20px;  
 }
 
-.button_home{
 
-}
 
 .title-lg {
     font-size: 175%;
 }
+
 .title{
-    font-size: 150%;
+    font-family: 'Arvo', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    margin-left: 15px;
+    font-size: 26px;    
 }
 
 .title-sm {
@@ -54,17 +67,24 @@ a, .button_del {
     font-size: 80%;
 }
 .username{
-    color:  #d8be00;
+    color:  #000000;
     font-family: 'Arvo', sans-serif;
     font-weight: 900;
     font-size: 19px;
+    text-align: center;
 }
 
-.navbar a{
-    color:  #3EB489;
+.navbar-main a{
+    color:  #000000;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 27px;
+    text-decoration: none;
 
+}
+
+.text-field{
+    margin-bottom: 8px;
+    margin-right: 8px;
 }
 
 .button_to{
@@ -73,4 +93,28 @@ a, .button_del {
 
 .text-red{
     color: #B00100;
+}
+
+.username a {
+    font-size: inherit; 
+  }
+
+.error-text{
+    margin-left: 5px;
+}
+
+.title-question{
+    margin-top: 2px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.italic{
+    font-style: italic;
+}
+.text-md{
+    font-size: 115%;
+}
+
+.text-dark-grey{
+    color:  #3c3e3f;
 }

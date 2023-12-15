@@ -1,20 +1,27 @@
-<div class="container">
-  <h2 class="title">Edit users info!</h2>
+<div class="container-user ">
+  <h2 class="title">Edit users info</h2>
   <div class="mt" >
     <%= form_with model: @user, url: user_path(@user), method: :patch, data: {turbo: false} do |form| %>
+      <div class="container-field mb-sm">
       <p><%= form.label :name, "Your name" %></p>
       <p><%= form.text_field :name , class: "form-textfield" %></p>
+      </div>
 
+      <div class="container-field mb-sm ">
       <p class="mt"><%= form.label :nickname, "Your @nickname" %></p>
       <p><%= form.text_field :nickname , class: "form-textfield" %></p>
+      </div>
 
-      <p class="mt"><%= form.label :password, "Password" %></p>
+
+  <div class="container-field mb-sm">
+      <p class="mt error-text"><%= form.label :password, "Password" %></p>
       <p><%= form.password_field :password , class: "form-textfield"%></p>
-
+      </div>
+      <div class="error-text container-field mb-sm">
       <p class="mt"><%= form.label :password_confirmation, "Password" %></p>
       <p><%= form.password_field :password_confirmation , class: "form-textfield"%></p>
-
-      <p class="mt-lg"><%= form.submit "Register!", class: "button button-main" %></p>
+</div>
+      <p class="mt-lg"><%= form.submit "Edit", class: "button-confirm" %></p>
     <% end %>
   </div>
 </div>

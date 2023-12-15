@@ -1,17 +1,6 @@
-<div class="container">
-
-  <h2>Question</h2>
-
-  <p><%= @question.body %></p>
-  <p>user_id: <b><%= @question.user_id %></b></p>
-
-
-
-  <!--<div class="icon-a-text">
-    <p>
-
-  </div>-->
-
+<div class="container-question-info">
+  <h2 class="title-question">Question with user_id: <h class="italic"><%= @question.user_id %></h></h2> 
 <%= render @question%>
+    <%= button_to fa_icon('home'), questions_path, method: :get, title: "Go home page", class: "button_home" %>
 
 </div>

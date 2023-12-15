@@ -116,6 +116,7 @@ GEM
       railties (>= 3.2, < 8.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    htmlbeautifier (1.4.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.2.3)
@@ -273,6 +274,7 @@ DEPENDENCIES
   factory_bot_rails (~> 6.0)
   faker
   font-awesome-rails
+  htmlbeautifier
   importmap-rails
   jbuilder
   puma (>= 5.0)

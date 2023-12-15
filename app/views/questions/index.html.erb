@@ -1,22 +1,11 @@
-<div class="container">
-
-
-
-  <s class="a-text"><%= link_to "Create new question", new_question_path, class: "button button_main"%></s>
-
-  <%= render 'form', question: @question%>
-
+ <div class="parent-container-btn">
+  <div class="container-btn mb-md ">
+    <%= link_to "Create new question", new_question_path, class: "text-add-question" %>
+  </div>
 </div>
-<div class="container mt-lg mb-lg">
-<h2 class = "title-lg" >
 
-<%= @questions.count %>
-  <%= inclination(@questions.count, "Question", "Questions", "Questions") %>
-
-</h2>
-</div>
 <% @questions.each do |question| %>
-  <div class="mt-md container">
+  <div class="mt-md container-question">
     <%= render question %>
   </div>
 <% end %>
