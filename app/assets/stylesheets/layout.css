@@ -104,3 +104,27 @@ body{
     justify-content: left;
     align-items: left;
 }
+
+.container-question-create {
+    justify-content: left;
+    align-items: left;
+    border-radius: 10px;
+    font-family: 'Arvo', sans-serif;
+    padding: 5px;
+    background: linear-gradient(225deg, #f6832f 0%,  #eb6464  100%);
+    height: auto;
+}
+.align-center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-question-info{
+    background: linear-gradient(225deg, #71cdee 0%, #62a0ea 100%);
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-family: 'Arvo', sans-serif;
+}

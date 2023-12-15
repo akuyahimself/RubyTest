@@ -1,8 +1,13 @@
+
 <%= form_with model: question do |form| %>
+<div class="container-question-create mt-md">
   <p><%= form.label :body, "Text" %></p>
-  <p><%= form.text_area :body, rows: 5, class: "form_textarea" %></p>
-  <p><%= form.label :body, "Text" %></p>
-  <p><%= form.text_field :user_id, class: "form_textfield"%></p>
-  <p><%= form.submit "Save", class: "button button_main"%></p>
+  <p><%= form.text_area :body, rows: 5, class: "form-textarea" %></p>
+  <p><%= form.label :body, "More text" %></p>
+  <p><%= form.text_field :user_id, class: "form-textarea"%></p>
+  </div>
+  <div class="container-question-create mt-md">
+  <p><%= form.submit "Save", class: "btn-create"%></p>
+  </div>
 <% end %>
 

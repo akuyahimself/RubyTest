@@ -103,3 +103,18 @@ body{
     margin-left: 5px;
 }
 
+.title-question{
+    margin-top: 2px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.italic{
+    font-style: italic;
+}
+.text-md{
+    font-size: 115%;
+}
+
+.text-dark-grey{
+    color:  #3c3e3f;
+}

@@ -1,4 +1,4 @@
-.form-textarea, .form-textfield {
+.form-textfield {
     border: 3px solid    #bb84c7 ;
     background-color: rgba( 68, 202, 244, 0.3);
     border-radius: 5px;
@@ -6,7 +6,7 @@
 
 }
 
-.form-textarea:focus, .form-textfield:focus {
+.form-textfield:focus {
 
     background-color: rgba( 68, 202, 244, 0.6);
     outline-width: 0;
@@ -17,6 +17,15 @@
 .form-textarea{
     box-sizing: border-box;
     width: 100%;
+    font-family: 'Arvo', sans-serif;
+    font-weight: 600;
+    border-color: #f6832f;
+    background-color: rgba( 240, 139, 226, 0.3);
+}
+
+.form-textarea:focus{
+    outline: none;
+    outline-width: 0;
 }
 
 
